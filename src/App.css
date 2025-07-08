@@ -32,6 +32,11 @@
   }
 }
 
+.carousel .slide {
+  touch-action: pan-y !important; /* Allow vertical scroll */
+}
+
+
 .card {
   padding: 2em;
 }

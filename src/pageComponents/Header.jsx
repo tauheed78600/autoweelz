@@ -27,7 +27,7 @@ function Header() {
                 </nav>
 
                 <div className="md:hidden">
-                    <button className="p-2 rounded bg-black/10 focus:outline-none hover:bg-white/10 transition" onClick={toggleMenu}>
+                    <button className="p-2 rounded focus:outline-none hover:bg-white/10 transition" onClick={toggleMenu}>
 
                         {isOpen ? <X size={28} color="#fff" /> : <Menu size={28} color="#fff" />}
                     </button>
@@ -35,8 +35,8 @@ function Header() {
             </div>
 
             <div
-                className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 py-4 px-6' : 'max-h-0'
-                    } backdrop-blur-md bg-white/5 text-white`}
+                className={`md:hidden bg-white/5 z-50 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-96 py-4 px-6' : 'max-h-0'
+                    } backdrop-blur-md  text-white`}
             >
 
                 <div className="space-y-4">
