@@ -2,22 +2,25 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import bike1 from '/public/bike1.jpg';
+import bike2 from '/public/bike2.jpg';
+import bike3 from '/public/bike3.jpg';
 
 const slides = [
   {
-    image: 'src/assets/bike1.jpg',
+    image: bike1,
     heading: 'WELCOME TO',
     highlight: 'BIKE-TRADER',
     tagline: 'Sell Your Used Bike From Home in Minutes!',
   },
   {
-    image: 'src/assets/bike2.jpg',
+    image: bike2,
     heading: 'FAST & EASY',
     highlight: 'SELLING EXPERIENCE',
     tagline: 'Quick Quotes. Instant Offers. Trusted Buyers.',
   },
   {
-    image: 'src/assets/bike3.jpg',
+    image: bike3,
     heading: 'TRUSTED BY',
     highlight: 'THOUSANDS OF SELLERS',
     tagline: 'Join Our Happy Sellers Community!',
@@ -41,7 +44,6 @@ const BikeCarousel = () => {
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="relative w-full h-auto">
-            {/* Fullscreen Image */}
             <img
               src={slide.image}
               alt={`Slide ${index}`}
@@ -49,8 +51,6 @@ const BikeCarousel = () => {
             />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
 
-
-            {/* Text Overlay - Left Aligned */}
             <div className="absolute inset-0 flex items-center justify-start px-6 md:px-20">
               <div className="text-left space-y-4 max-w-lg">
                 <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-snug">
