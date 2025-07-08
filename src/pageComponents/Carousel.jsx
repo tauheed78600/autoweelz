@@ -1,22 +1,25 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import bike1 from '/public/bike1.jpg';
+import bike2 from '/public/bike2.jpg';
+import bike3 from '/public/bike3.jpg';
 
 const slides = [
   {
-    image: '/public/bike1.jpg',
+    image: bike1,
     heading: 'WELCOME TO',
     highlight: 'BIKE-TRADER',
     tagline: 'Sell Your Used Bike From Home in Minutes!',
   },
   {
-    image: '/public/bike2.jpg',
+    image: bike2,
     heading: 'FAST & EASY',
     highlight: 'SELLING EXPERIENCE',
     tagline: 'Quick Quotes. Instant Offers. Trusted Buyers.',
   },
   {
-    image: '/public/bike3.jpg',
+    image: bike3,
     heading: 'TRUSTED BY',
     highlight: 'THOUSANDS OF SELLERS',
     tagline: 'Join Our Happy Sellers Community!',
