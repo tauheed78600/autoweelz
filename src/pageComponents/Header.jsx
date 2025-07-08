@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import LOGO from '../assets/logo.png';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ function Header() {
         <header className="w-full fixed top-0 left-0 z-50 shadow-lg bg-black/50 backdrop-blur-md text-white transition-all duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
                 <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.location.reload()}>
-                    <img src="src/assets/logo1.png" alt="Logo" className="h-12 transition-transform hover:scale-105 duration-300" />
+                    <img src={LOGO} alt="Logo" className="h-12 transition-transform hover:scale-105 duration-300" />
                 </div>
 
                 <nav className="hidden md:flex items-center space-x-6">
