@@ -8,11 +8,13 @@ function Header() {
 
     return (
         <header className="w-full fixed top-0 left-0 z-50 shadow-lg bg-black/50 backdrop-blur-md text-white transition-all duration-300">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
                 <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.location.reload()}>
                     <img src={LOGO} alt="Logo" className="h-12 transition-transform hover:scale-105 duration-300" />
                 </div>
-
+                <div>
+                    {/* <p className='md:hidden lg:text-sm'>Call now at <span className='text-blue-300'>+91-9923073108</span></p> */}
+                </div>
                 <nav className="hidden md:flex items-center space-x-6">
                     {['Home', 'Sell Now', 'About Us', 'Blog', 'Contact Us', 'FAQ'].map((item) => (
                         <a

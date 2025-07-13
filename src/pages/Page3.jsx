@@ -3,10 +3,9 @@ import React from 'react';
 
 function Page3() {
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-blue-200 to-blue-500 flex items-center justify-center px-4 sm:px-8 py-12">
+    <div className="flex items-center justify-center">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-12 max-w-6xl w-full">
         
-        {/* TEXT SECTION */}
         <div className="w-full lg:w-1/2 p-6 rounded-2xl bg-white/20 border border-white/30 shadow-xl backdrop-blur-md transition-all duration-300 hover:shadow-2xl">
           <h2 className="text-blue-900 limelight font-bold text-4xl sm:text-5xl md:text-6xl leading-tight text-center lg:text-left">
             Trade Smart

@@ -17,15 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #ffffff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #ffffff;
-}
 
 body {
   margin: 0;
@@ -46,10 +37,6 @@ h1 {
   :root {
     color: #213547;
     background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
   }
 
   button {
