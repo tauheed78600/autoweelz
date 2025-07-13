@@ -5,6 +5,32 @@ import LOGO from '../assets/logo.png';
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen(!isOpen);
+    const items = [
+        {
+            name: "Home",
+            link: "/"
+        },
+        {
+            name: "Sell Now",
+            link: "/sell-now"
+        },
+        {
+            name: "About us",
+            link: "/about-us"
+        },
+                {
+            name: "Blogs",
+            link: "/blogs"
+        },
+                {
+            name: "Contact us",
+            link: "/about-us"
+        },
+                {
+            name: "FAQ",
+            link: "/faq"
+        }
+    ]
 
     return (
         <header className="w-full fixed top-0 left-0 z-50 shadow-lg bg-black/50 backdrop-blur-md text-white transition-all duration-300">
@@ -16,13 +42,13 @@ function Header() {
                     {/* <p className='md:hidden lg:text-sm'>Call now at <span className='text-blue-300'>+91-9923073108</span></p> */}
                 </div>
                 <nav className="hidden md:flex items-center space-x-6">
-                    {['Home', 'Sell Now', 'About Us', 'Blog', 'Contact Us', 'FAQ'].map((item) => (
+                    {items.map((item, index) => (
                         <a
-                            key={item}
-                            href="#"
+                            key={index}
+                            href={item.link}
                             className="text-white font-medium text-lg relative group"
                         >
-                            {item}
+                            {item.name}
                             <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
                         </a>
                     ))}
@@ -42,13 +68,13 @@ function Header() {
             >
 
                 <div className="space-y-4">
-                    {['Home', 'Sell Now', 'About Us', 'Blog', 'Contact Us', 'FAQ'].map((item) => (
+                    {items.map((item, index) => (
                         <a
-                            key={item}
-                            href="#"
+                            key={index}
+                            href={item.link}
                             className="block text-lg font-medium hover:text-green-100 transition"
                         >
-                            {item}
+                            {item.name}
                         </a>
                     ))}
                 </div>

@@ -5,9 +5,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import Page2 from '../pages/Page2.jsx'
 import Page3 from './Page3.jsx';
 import OutProcess from './OurProcess.jsx';
-import Page4 from './Page4.jsx';
+import AboutUs from './AboutUs.jsx';
 import Blogs from './Blogs.jsx';
 import Footer from './Footer.jsx';
+import Testimonials from './Testimonials.jsx';
 
 const BikeCarousel = React.lazy(() => import('../pageComponents/Carousel.jsx'));
 
@@ -20,9 +21,10 @@ function Homepage() {
       <Page2/>
       <Page3/>
       <OutProcess/>
-      <Page4/>
+      <AboutUs/>
+      <Testimonials/>
       <Blogs/>
-      <Footer/>
+
     </div>
   )
 }

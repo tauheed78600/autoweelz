@@ -2,7 +2,7 @@ import React from 'react';
 import aboutUs from '../assets/aboutusImage.png';
 import { MoveRight } from 'lucide-react';
 
-function Page4() {
+function AboutUs() {
   return (
     <div className='w-full p-10 bg-gradient-to-tl from-blue-100 to blue-200 mt-4'>
       <div className="grid md:grid-cols-[25%_75%] grid-cols-1 gap-8 ">
@@ -16,12 +16,13 @@ function Page4() {
 
         <div className='flex flex-col justify-center text-blue-900 font-semibold p-4 '>
 
-          <p className="leading-relaxed text-right sm:text-center md:text-left">
+          <p className="leading-relaxed text-center sm:text-center md:text-left">
             At BikeTrader, we’re redefining the used bike marketplace by putting you in control. No hidden flaws, no paperwork nightmares—just a hassle-free, fair-value exchange between genuine riders. We personally verify every bike, handle seamless ownership transfers, and connect you with serious buyers or sellers, so you skip the haggling and the headaches. Whether upgrading, downsizing, or just passing on the ride, we ensure smooth transitions and secure deals.
             <br /><br />
             Your bike’s next chapter starts here – simple, safe, and swift. 🚲✨
             <br /><br />
-            Why This Works:
+            <p className='text-left'>
+              <p className='text-center'>Why This Works:</p>
             <br />
             ✅ Trust-First – Verified listings, no scams, no surprises.
             <br />
@@ -30,6 +31,7 @@ function Page4() {
             ✅ Fair & Fast – Competitive pricing, quick sales.
             <br />
             ✅ For Riders, By Riders – A community built on transparency.
+            </p>
           </p>
           <div className='flex justify-center md:justify-start mt-4'>
             <button className='hover:bg-blue-900 w-96 text-center flex flex-row justify-center gap-2 border transition-all duration-300 ease-in-out hover:text-white rounded-full p-2'>Know More <MoveRight/></button>
@@ -40,4 +42,4 @@ function Page4() {
   );
 }
 
-export default Page4;
+export default AboutUs;

@@ -29,8 +29,6 @@ const slides = [
 const BikeCarousel = () => {
     return (
         <div className="w-full min-h-[500px] md:min-h-[600px] lg:min-h-[80vh]">
-
-
             <Carousel
                 autoPlay
                 infiniteLoop
